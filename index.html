@@ -1548,15 +1548,14 @@ var pysFacebookRest = {"restApiUrl":"https://trokajotreinamentos.online/wp-json/
     rejectBtn.addEventListener('click', function(){ handleConsent('rejected'); });
   })();
 
-  // FAQ toggle
-  (function(){
-    var els = document.querySelectorAll('.tr-pack .faq-q');
-  for (var i = 0; i < els.length; i++) {
-    els[i].addEventListener('click', function(){
-      var item = this.closest('.faq-item');
+  // FAQ toggle (delegação)
+  document.addEventListener('click', function(e){
+    var q = e.target.closest('.faq-q');
+    if (q && q.closest('.tr-pack')) {
+      var item = q.closest('.faq-item');
       if (item) item.classList.toggle('open');
-    });
-  }
+    }
+  });
 
   // Lightbox
   var lb = document.getElementById('tr-lightbox');

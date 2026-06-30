@@ -61,8 +61,7 @@ h1,h2,h3,h4{text-wrap:balance}
 .tr-pack .preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
 .tr-pack .preview-tile{aspect-ratio:1;background:var(--bg-soft);border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--border);transition:transform .3s cubic-bezier(.25,.8,.25,1),box-shadow .3s cubic-bezier(.25,.8,.25,1)}
 .tr-pack .preview-tile img{width:100%;height:100%;object-fit:cover;cursor:zoom-in;background:var(--bg-soft);transition:opacity .3s ease}
-.tr-pack .preview-tile img:not([loaded]){opacity:0}
-.tr-pack .preview-tile img[loaded]{opacity:1}
+.tr-pack .preview-tile img{opacity:1}
 .tr-pack .preview-tile:hover{transform:scale(1.05)}
 .tr-pack .tr-hidden{display:none}
 .tr-pack .tr-show-more{display:flex;align-items:center;justify-content:center;gap:6px;width:100%;margin-top:14px;padding:12px;background:var(--card);border:1px solid var(--border);border-radius:100px;font-family:inherit;font-weight:700;font-size:.85rem;color:var(--primary);cursor:pointer;transition:background .2s;box-shadow:var(--shadow-sm)}
@@ -184,54 +183,58 @@ h1,h2,h3,h4{text-wrap:balance}
 <section class="preview-section">
   <div class="section-intro"><span class="eyebrow">Pré-visualização</span><h2>Dê uma espiada no que te espera</h2><p>Uma pequena amostra das +20.000 figurinhas que você vai receber.</p></div>
   <div class="preview-grid">
-    <div class="preview-tile"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_1bbd825aac1d188f47801c17fbbab67b.webp" alt="Figurinha pack 1"></div>
-    <div class="preview-tile"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_9e81272c310e716c7dceb68feb37b50b.webp" alt="Figurinha pack 2"></div>
-    <div class="preview-tile"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_7caff0e8de76b03bc5c915f110739d64.webp" alt="Figurinha pack 3"></div>
-    <div class="preview-tile"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_c19cb71dfbd30a9b233de0e84657127b.webp" alt="Figurinha pack 4"></div>
-    <div class="preview-tile"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_3f1baed98fa15cf589a58fdcc765d330.webp" alt="Figurinha pack 5"></div>
-    <div class="preview-tile"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_417f401c73b364eb2cac27e14b39b4d7.webp" alt="Figurinha pack 6"></div>
-    <div class="preview-tile"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_44a24b7188a19c9541d69413131cd577.webp" alt="Figurinha pack 7"></div>
-    <div class="preview-tile"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_979c5343d14417b0301974a169d82526.webp" alt="Figurinha pack 8"></div>
-    <div class="preview-tile"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_ef81562ac80f6c4c3da576fb26c18f32.webp" alt="Figurinha pack 9"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_85f3c628d6052a05ef24f7e57e78decf.webp" alt="Figurinha pack 10"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_f410bc1ae6719475a669190fbedb4032.webp" alt="Figurinha pack 11"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_d46b45cb469afcf30b897369be80dbae.webp" alt="Figurinha pack 12"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/external/i.imgur.com/fAhnQsA.webp" alt="Figurinha 1"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/external/i.imgur.com/vMHmUky.webp" alt="Figurinha 2"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/external/i.imgur.com/VMBaejA.webp" alt="Figurinha 3"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/external/i.imgur.com/5gUELJr.webp" alt="Figurinha 4"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/external/i.imgur.com/ChSquqH.webp" alt="Figurinha 5"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/external/i.imgur.com/XcYh7ux.webp" alt="Figurinha 6"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/external/i.imgur.com/yQ7LLD0.webp" alt="Figurinha 7"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/external/i.imgur.com/bNF6N7Z.webp" alt="Figurinha 8"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/external/i.imgur.com/8mTE9TY.webp" alt="Figurinha 9"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/external/i.imgur.com/hFwJBSB.webp" alt="Figurinha 10"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/external/i.imgur.com/8BZAnNE.webp" alt="Figurinha 11"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/external/i.imgur.com/azM0ZTw.webp" alt="Figurinha 12"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/external/i.imgur.com/uNAEzW6.webp" alt="Figurinha 13"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/external/i.imgur.com/uDLhyf3.webp" alt="Figurinha 14"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/external/i.imgur.com/06s6PX0.webp" alt="Figurinha 15"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/external/i.imgur.com/43Xaui4.webp" alt="Figurinha 16"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/external/i.imgur.com/mXhfOXF.webp" alt="Figurinha 17"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/external/i.imgur.com/pJEXGU7.webp" alt="Figurinha 18"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_fd493a29daa56b9a4c13b01961d423d7.webp" alt="Figurinha 19"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_0b02152b5e12ef7a9a4ac4263a15fa6a.webp" alt="Figurinha 20"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_70c45c176afc8e8e7ef33236c8a88128.webp" alt="Figurinha 21"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_420b52c57fc3e8d7512abaf4ec1cd1e8.webp" alt="Figurinha 22"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_5958e0def158f598a7c5e7d17cebba8e.webp" alt="Figurinha 23"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_9506544a60533f7284bf6fa813ebd005.webp" alt="Figurinha 24"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_1b2ec40f8bdc4d76cf3e0eeda53f789e.webp" alt="Figurinha 25"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_6693732a714a097f9e9890bb31a31e7a.webp" alt="Figurinha 26"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_b72f85f841dc4dd25bc4d3b592878843.webp" alt="Figurinha 27"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_75a45fc2c0dac99a9e0018b7b1944038.webp" alt="Figurinha 28"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_4898989a1f6c51de9cc3dd84821c3bad.webp" alt="Figurinha 29"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_fd493a29daa56b9a4c13b01961d423d7.webp" alt="Figurinha 30"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_4565603dc82112de63177346b797ce8f.webp" alt="Figurinha 31"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_6bb217f2468ccdad550f28567677bbe3.webp" alt="Figurinha 32"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_fd493a29daa56b9a4c13b01961d423d7.webp" alt="Figurinha 33"></div>
-    <div class="preview-tile tr-hidden"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/extracted/img_b5c58ecb5ea777bae13bd635291f8ef0.webp" alt="Figurinha 34"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_1bbd825aac1d188f47801c17fbbab67b.webp" alt="Figurinha pack 1" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_9e81272c310e716c7dceb68feb37b50b.webp" alt="Figurinha pack 2" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_7caff0e8de76b03bc5c915f110739d64.webp" alt="Figurinha pack 3" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_c19cb71dfbd30a9b233de0e84657127b.webp" alt="Figurinha pack 4" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_3f1baed98fa15cf589a58fdcc765d330.webp" alt="Figurinha pack 5" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_417f401c73b364eb2cac27e14b39b4d7.webp" alt="Figurinha pack 6" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_44a24b7188a19c9541d69413131cd577.webp" alt="Figurinha pack 7" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_979c5343d14417b0301974a169d82526.webp" alt="Figurinha pack 8" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_ef81562ac80f6c4c3da576fb26c18f32.webp" alt="Figurinha pack 9" loading="lazy" decoding="async"></div>
   </div>
-  <button class="tr-show-more" type="button" onclick="var h=this.previousElementSibling.querySelectorAll('.tr-hidden'),t=this;h.forEach(function(e,i){setTimeout(function(){e.classList.remove('tr-hidden')},i*80)});t.remove()">Mostrar mais 25 figurinhas <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+  <div id="tr-more-grid" class="tr-hidden">
+    <div class="preview-grid preview-grid--more">
+    <div class="preview-tile"><img src="assets/extracted/img_85f3c628d6052a05ef24f7e57e78decf.webp" alt="Figurinha pack 10" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_f410bc1ae6719475a669190fbedb4032.webp" alt="Figurinha pack 11" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_d46b45cb469afcf30b897369be80dbae.webp" alt="Figurinha pack 12" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/external/i.imgur.com/fAhnQsA.webp" alt="Figurinha 1" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/external/i.imgur.com/vMHmUky.webp" alt="Figurinha 2" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/external/i.imgur.com/VMBaejA.webp" alt="Figurinha 3" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/external/i.imgur.com/5gUELJr.webp" alt="Figurinha 4" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/external/i.imgur.com/ChSquqH.webp" alt="Figurinha 5" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/external/i.imgur.com/XcYh7ux.webp" alt="Figurinha 6" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/external/i.imgur.com/yQ7LLD0.webp" alt="Figurinha 7" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/external/i.imgur.com/bNF6N7Z.webp" alt="Figurinha 8" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/external/i.imgur.com/8mTE9TY.webp" alt="Figurinha 9" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/external/i.imgur.com/hFwJBSB.webp" alt="Figurinha 10" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/external/i.imgur.com/8BZAnNE.webp" alt="Figurinha 11" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/external/i.imgur.com/azM0ZTw.webp" alt="Figurinha 12" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/external/i.imgur.com/uNAEzW6.webp" alt="Figurinha 13" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/external/i.imgur.com/uDLhyf3.webp" alt="Figurinha 14" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/external/i.imgur.com/06s6PX0.webp" alt="Figurinha 15" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/external/i.imgur.com/43Xaui4.webp" alt="Figurinha 16" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/external/i.imgur.com/mXhfOXF.webp" alt="Figurinha 17" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/external/i.imgur.com/pJEXGU7.webp" alt="Figurinha 18" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_fd493a29daa56b9a4c13b01961d423d7.webp" alt="Figurinha 19" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_0b02152b5e12ef7a9a4ac4263a15fa6a.webp" alt="Figurinha 20" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_70c45c176afc8e8e7ef33236c8a88128.webp" alt="Figurinha 21" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_420b52c57fc3e8d7512abaf4ec1cd1e8.webp" alt="Figurinha 22" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_5958e0def158f598a7c5e7d17cebba8e.webp" alt="Figurinha 23" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_9506544a60533f7284bf6fa813ebd005.webp" alt="Figurinha 24" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_1b2ec40f8bdc4d76cf3e0eeda53f789e.webp" alt="Figurinha 25" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_6693732a714a097f9e9890bb31a31e7a.webp" alt="Figurinha 26" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_b72f85f841dc4dd25bc4d3b592878843.webp" alt="Figurinha 27" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_75a45fc2c0dac99a9e0018b7b1944038.webp" alt="Figurinha 28" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_4898989a1f6c51de9cc3dd84821c3bad.webp" alt="Figurinha 29" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_fd493a29daa56b9a4c13b01961d423d7.webp" alt="Figurinha 30" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_4565603dc82112de63177346b797ce8f.webp" alt="Figurinha 31" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_6bb217f2468ccdad550f28567677bbe3.webp" alt="Figurinha 32" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_fd493a29daa56b9a4c13b01961d423d7.webp" alt="Figurinha 33" loading="lazy" decoding="async"></div>
+    <div class="preview-tile"><img src="assets/extracted/img_b5c58ecb5ea777bae13bd635291f8ef0.webp" alt="Figurinha 34" loading="lazy" decoding="async"></div>
+    </div>
+  </div>
+  <button class="tr-show-more" type="button" onclick="var g=document.getElementById('tr-more-grid'),t=this;g.classList.remove('tr-hidden');t.remove()">Mostrar mais 25 figurinhas <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
 </section>
 
 <section>
@@ -401,15 +404,10 @@ h1,h2,h3,h4{text-wrap:balance}
 (function(){
 var lb=document.getElementById('tr-lightbox');
 if(!lb)return;
-var lbImg=lb.querySelector('img'),lbCounter=lb.querySelector('.lightbox-counter'),tiles=document.querySelectorAll('.tr-pack .preview-tile img'),cur=0;
-function loadImg(img){
-  if(img.dataset.src&&img.src.indexOf('data:image/gif')===0){
-    img.src=img.dataset.src;
-    img.removeAttribute('data-src');
-    img.setAttribute('loaded','');
-  }
-}
-function show(i){if(i<0)i=tiles.length-1;if(i>=tiles.length)i=0;cur=i;loadImg(tiles[i]);lbImg.src=tiles[i].src;lbImg.alt=tiles[i].alt||'';lbCounter.textContent=(i+1)+' / '+tiles.length}
+var lbImg=lb.querySelector('img'),lbCounter=lb.querySelector('.lightbox-counter'),tiles=null,cur=0;
+function refresh(){tiles=document.querySelectorAll('.tr-pack .preview-tile img')}
+refresh();
+function show(i){if(i<0)i=tiles.length-1;if(i>=tiles.length)i=0;cur=i;lbImg.src=tiles[i].src;lbImg.alt=tiles[i].alt||'';lbCounter.textContent=(i+1)+' / '+tiles.length}
 function open(i){show(i);lb.classList.add('open');document.body.style.overflow='hidden'}
 function close(){lb.classList.remove('open');document.body.style.overflow=''}
 for(var t=0;t<tiles.length;t++){(function(i){tiles[i].addEventListener('click',function(){open(i)})})(t)}
@@ -418,9 +416,7 @@ lb.querySelector('.prev').addEventListener('click',function(e){e.stopPropagation
 lb.querySelector('.next').addEventListener('click',function(e){e.stopPropagation();show(cur+1)});
 lb.addEventListener('click',function(e){if(e.target===lb||e.target===lbImg)close()});
 document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();else if(e.key==='ArrowLeft')show(cur-1);else if(e.key==='ArrowRight')show(cur+1)});
-
-var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){loadImg(e.target);obs.unobserve(e.target)}})},{rootMargin:'400px'});
-tiles.forEach(function(img){obs.observe(img)});
+document.querySelector('.tr-show-more')&&document.querySelector('.tr-show-more').addEventListener('click',function(){setTimeout(refresh,100)});
 })();
 
 (function(){

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "termos-de-uso.html",
+  "entry": "termos-de-uso.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-06-29T16:01:16.883Z",
+  "updatedAt": "2026-06-29T16:01:16.883Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}

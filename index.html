@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Pack de Figurinhas para Stories</title>
 <meta name="robots" content="max-image-preview:large">
-<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="assets/extracted/img_55c6991de8c7a221f3800f57ea213da9.webp" as="image" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin media="(min-width: 768px)">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin media="(min-width: 768px)">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" as="style" media="(min-width: 768px)" onload="this.media='all'">
 
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -38,9 +38,9 @@ h1,h2,h3,h4{text-wrap:balance}
 .tr-pack .hero h1{margin-bottom:14px}
 .tr-pack .hero h1 .accent{background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .tr-pack .hero-sub{color:var(--ink-soft);font-size:1rem;max-width:340px;margin:0 auto 28px}
-.tr-pack .hero-img-wrap{position:relative;margin:0 auto 28px;max-width:320px}
-.tr-pack .hero-img-wrap::before{content:'';position:absolute;inset:-20px;background:var(--gradient);border-radius:32px;filter:blur(40px);opacity:.25;z-index:0}
-.tr-pack .hero-img{position:relative;width:100%;border-radius:24px;animation:tr-float 5s ease-in-out infinite;box-shadow:var(--shadow-lg)}
+.tr-pack .hero-img-wrap{position:relative;margin:0 auto 28px;max-width:320px;background:linear-gradient(135deg,rgba(233,30,140,.08),rgba(168,85,247,.08));border-radius:24px}
+.tr-pack .hero-img-wrap::before{content:'';position:absolute;inset:-12px;background:var(--gradient);border-radius:32px;opacity:.15;z-index:0}
+.tr-pack .hero-img{position:relative;width:100%;border-radius:24px;animation:tr-float 5s ease-in-out infinite;box-shadow:var(--shadow-lg);background:#e8d5e8}
 .tr-pack .btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;max-width:380px;padding:18px 24px;background:var(--gradient);color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1rem;border:none;border-radius:100px;cursor:pointer;box-shadow:0 12px 30px rgba(233,30,140,.35);animation:tr-pulse 2.5s infinite;transition:transform .2s ease;margin:0 auto}
 .tr-pack .btn-primary:active{transform:scale(.97)}
 .tr-pack .btn-green{background:linear-gradient(135deg,#16a34a 0%,#22c55e 100%);box-shadow:0 12px 30px rgba(22,163,74,.4);animation:tr-pulse-green 2.5s infinite}
@@ -59,7 +59,7 @@ h1,h2,h3,h4{text-wrap:balance}
 .tr-pack .benefit-card p{font-size:.82rem;color:var(--ink-soft);line-height:1.45}
 .tr-pack .preview-section{background:linear-gradient(180deg,var(--bg) 0%,var(--bg-soft) 100%)}
 .tr-pack .preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.tr-pack .preview-tile{aspect-ratio:1;background:var(--card);border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--border);transition:transform .3s cubic-bezier(.25,.8,.25,1),box-shadow .3s cubic-bezier(.25,.8,.25,1);will-change:transform}
+.tr-pack .preview-tile{aspect-ratio:1;background:var(--card);border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--border);transition:transform .3s cubic-bezier(.25,.8,.25,1),box-shadow .3s cubic-bezier(.25,.8,.25,1)}
 .tr-pack .preview-tile:hover{transform:scale(1.05)}
 .tr-pack .preview-tile img{width:100%;height:100%;object-fit:cover;cursor:zoom-in}
 .tr-pack .tr-hidden{display:none}
@@ -165,9 +165,9 @@ h1,h2,h3,h4{text-wrap:balance}
   <div class="hero-badge"><span class="dot"></span>Pack Figurinhas Premium</div>
   <h1><span class="accent">+20.000</span> figurinhas para os seus <span class="accent">stories</span></h1>
   <p class="hero-sub">Pare o scroll, encante seus seguidores e venda mais com stories criativos, divertidos e únicos.</p>
-  <div class="hero-img-wrap"><img class="hero-img" src="assets/extracted/img_55c6991de8c7a221f3800f57ea213da9.webp" alt="Pack de Figurinhas" fetchpriority="high"></div>
+  <div class="hero-img-wrap"><img class="hero-img" src="assets/extracted/img_55c6991de8c7a221f3800f57ea213da9.webp" alt="Pack de Figurinhas" fetchpriority="high" loading="eager" decoding="sync"></div>
   <a class="btn-primary btn-green" href="#tr-benefits">Quero meu Pack<svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-  <img width="500" height="63" class="trust-img" src="./wp-content/uploads/2024/02/satisfacaocompraprivacidade.webp" alt="Satisfação garantida" loading="lazy" decoding="async">
+  <img width="500" height="63" class="trust-img" src="./wp-content/uploads/2024/02/satisfacaocompraprivacidade.webp" alt="Satisfação garantida" fetchpriority="low" decoding="async">
 </section>
 
 <section class="tight" id="tr-benefits">

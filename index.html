@@ -982,9 +982,9 @@ var pysFacebookRest = {"restApiUrl":"https://trokajotreinamentos.online/wp-json/
   font-size: 0.87rem;
   color: var(--ink-soft);
   line-height: 1.6;
-  display: none;
+  display: none !important;
 }
-.tr-pack .faq-item.open .faq-a { display: block; }
+.tr-pack .faq-item.open .faq-a { display: block !important; }
 
 /* ---- Final CTA ---- */
 .tr-pack .final-cta {
@@ -1421,43 +1421,42 @@ var pysFacebookRest = {"restApiUrl":"https://trokajotreinamentos.online/wp-json/
     </div>
     <div>
       <div class="faq-item">
-        <button class="faq-q" type="button">
+        <button class="faq-q" type="button" onclick="this.parentNode.classList.toggle('open')">
           <span>Como recebo as figurinhas?</span>
           <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
         <div class="faq-a">Assim que voc&#234; realizar a compra, receber&#225; no seu e-mail e WhatsApp o link de acesso &#224; plataforma. Basta criar a sua senha e entrar.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q" type="button">
+        <button class="faq-q" type="button" onclick="this.parentNode.classList.toggle('open')">
           <span>Funciona no iPhone e no Android?</span>
           <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
         <div class="faq-a">Sim! Funciona perfeitamente em qualquer celular. Voc&#234; ter&#225; um tutorial em v&#237;deo mostrando o passo a passo para cada sistema.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q" type="button">
+        <button class="faq-q" type="button" onclick="this.parentNode.classList.toggle('open')">
           <span>Preciso de algum aplicativo para usar?</span>
           <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
         <div class="faq-a">N&#227;o precisa de nada complicado. Indicamos um app gratuito que ajuda a organizar as figurinhas na galeria do seu celular.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q" type="button">
+        <button class="faq-q" type="button" onclick="this.parentNode.classList.toggle('open')">
           <span>Por quanto tempo terei acesso?</span>
           <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
         <div class="faq-a">Plano B&#225;sico (R$5,99): 3 meses de acesso. Plano Premium (R$15,99): acesso vital&#237;cio a todas as atualiza&#231;&#245;es.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q" type="button">
+        <button class="faq-q" type="button" onclick="this.parentNode.classList.toggle('open')">
           <span>O pagamento &#233; seguro?</span>
           <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
          <div class="faq-a">Sim. A Cakto &#233; uma das maiores empresas de pagamentos digitais e &#233; respons&#225;vel pelo processamento seguro da sua compra.</div>
-
       </div>
       <div class="faq-item">
-        <button class="faq-q" type="button">
+        <button class="faq-q" type="button" onclick="this.parentNode.classList.toggle('open')">
           <span>Posso revender as figurinhas?</span>
           <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
@@ -1548,14 +1547,7 @@ var pysFacebookRest = {"restApiUrl":"https://trokajotreinamentos.online/wp-json/
     rejectBtn.addEventListener('click', function(){ handleConsent('rejected'); });
   })();
 
-  // FAQ toggle (delegação)
-  document.addEventListener('click', function(e){
-    var q = e.target.closest('.faq-q');
-    if (q && q.closest('.tr-pack')) {
-      var item = q.closest('.faq-item');
-      if (item) item.classList.toggle('open');
-    }
-  });
+
 
   // Lightbox
   var lb = document.getElementById('tr-lightbox');
